@@ -22,9 +22,7 @@ Route::get('/escolares/alumnos/alta', [AlumnoController::class, 'altaAlumno'])->
 Route::post('/escolares/alumnos/crear', [AlumnoController::class, 'crearAlumno'])->name('escolaresAlumnosCrear');
 
 Route::get('/escolares/planes_estudio', [PlanEstudioController::class, 'index'])->name('escolaresPlanesEstudio');
+Route::get('/escolares/planes_estudio/editar/{id}', [PlanEstudioController::class, 'updatePlanEstudio'])->name('planEstudioUpdate');
 
-Route::get('/plan-estudio/editar', function () {
-    return "Se ha editado correctamente";
-})->name('PlanesEstudioEditar');
 
 
